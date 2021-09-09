@@ -18,7 +18,7 @@ new Vue({
             this.message = this.message.split('').reverse().join('')
         },
         sayHi: function(){
-            return 'Hi';
+            return this.message;
         }
     }
 })
