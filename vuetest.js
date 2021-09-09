@@ -4,7 +4,9 @@ new Vue({
     //データを持たせることもできる
     data(){
         return{
-            message: 'Messe'
+            message: 'Messe',
+            number: 3,
+            ok: true
         };
     },
     //メソッド
@@ -14,6 +16,9 @@ new Vue({
             //dataはいらないことに注意
             //↓で文字列を反転できる
             this.message = this.message.split('').reverse().join('')
+        },
+        sayHi: function(){
+            return 'Hi';
         }
     }
 })
